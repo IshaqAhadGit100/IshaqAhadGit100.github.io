@@ -119,3 +119,36 @@ li {
 ul {
   list-style-type: square;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 0.8rem;
+}
+
+nav a {
+  display: block;                 
+  width: 100%;
+  padding: 0.9rem 1rem;
+
+  border: 2px solid #aa6666;
+  border-radius: 8px;
+  background-color: #f7efef;
+  color: #7a4444;
+
+  font-family: "Roboto Slab", "Rockwell", serif; 
+  text-transform: uppercase;      
+  letter-spacing: 0.08em;
+  text-align: center;
+
+  text-decoration: none;         
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #aa6666;
+  color: #ffffff;
+}
