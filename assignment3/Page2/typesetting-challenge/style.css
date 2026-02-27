@@ -33,3 +33,39 @@ footer {
 footer p {
   text-align: center;
 }
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  color: #222;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", "Rockwell", serif;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin: 1.6rem 0 0; 
+}
+
+p {
+  margin: 1rem 0;
+}
+
+
+section h2 + p {
+  text-indent: 2rem;
+}
