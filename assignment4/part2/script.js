@@ -19,5 +19,15 @@ for (const image of images) {
   newImage.src = baseURL + image.filename;
   newImage.alt = image.alt;
 
+   newImage.addEventListener("click", () => {
+    updateDisplayedImage(newImage);
+  });
+
   thumbBar.appendChild(newImage);
 }
+
+function updateDisplayedImage(img) {
+  displayedImage.src = img.src;
+  displayedImage.alt = img.alt;
+}
+
