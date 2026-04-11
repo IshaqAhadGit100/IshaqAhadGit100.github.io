@@ -27,58 +27,87 @@ create and structure a form-->
 <div class="form-section">
     <h2>Facilities</h2>
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
+   <fieldset>
+  <legend>Was the porridge</legend>
 
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
+  <label><input type="radio" name="porridge" checked> Too hot?</label>
+  <label><input type="radio" name="porridge"> Too cold?</label>
+  <label><input type="radio" name="porridge"> Just right?</label>
+</fieldset>
+
+ <fieldset>
+  <legend>Were the beds</legend>
+
+  <label><input type="radio" name="beds" checked> Too hard?</label>
+  <label><input type="radio" name="beds"> Too soft?</label>
+  <label><input type="radio" name="beds"> Just right?</label>
+</fieldset>
     
 
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi tec
-    Pretty
-    Majestic
+  <fieldset>
+  <legend>Describe the chairs (select all you agree with)</legend>
+
+ <label><input type="checkbox" name="chairs"> Comfy</label>
+<label><input type="checkbox" name="chairs"> Luxurious</label>
+<label><input type="checkbox" name="chairs"> Hi tec</label>
+<label><input type="checkbox" name="chairs"> Pretty</label>
+<label><input type="checkbox" name="chairs"> Majestic</label>
+</fieldset>
 </div>
 
 <div class="form-section">
    <h2>About your hosts</h2>
 
-    Who's your favorite bear?
-   
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
+  <div class="separator">
+  <label for="bear">Who's your favorite bear?</label>
+  <select id="bear" name="bear">
+    <option>Papa bear</option>
+    <option>Mama bear</option>
+    <option>Junior</option>
+    <option>Dozer</option>
+  </select>
+</div>
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+   <div class="separator">
+  <label for="greeting">Which greeting did you prefer?</label>
+<select id="greeting" name="greeting">
+    <option>Wave</option>
+    <option>Friendly greeting</option>
+    <option>Growl</option>
+    <option>Claw marks in the door</option>
+  </select>
+</div>
  </div>
 
  <div class="form-section">
   <h2>Any other feedback?</h2>
 
-    Give us your comments
+ <label for="comments">Give us your comments</label>
+<br>
+<textarea id="comments" name="comments"></textarea>
 </div>
 
  <div class="form-section">
     <h2>Your details</h2>
 
-    Name
-    Email
-    Phone
+  <div class="separator">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="separator">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+  </div>
+
+  <div class="separator">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+  </div>
 </div>
 
 <div class="form-section">
-    Submit
+  <button type="submit">Submit</button>
     </div>
   </form>
   </body>
