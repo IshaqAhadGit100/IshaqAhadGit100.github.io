@@ -31,3 +31,15 @@ function updateDisplayedImage(img) {
   displayedImage.alt = img.alt;
 }
 
+btn.addEventListener("click", () => {
+  if (btn.classList.contains("dark")) {
+    btn.textContent = "Lighten";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+  } else {
+    btn.textContent = "Darken";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+  }
+
+  // toggle class for next click
+  btn.classList.toggle("dark");
+});
