@@ -64,7 +64,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ff80ff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -176,8 +176,8 @@ audio {
   padding: 10px;
 }
 
-.show-hide {
-  cursor: pointer;
+.show-hide:focus {
+  outline: 2px solid yellow;
 }
 
 .comments font[size="6"] {
